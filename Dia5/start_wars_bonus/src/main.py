@@ -1,10 +1,14 @@
 from character import Character
 from jedi import Jedi
 from sith import Sith
+# Para criar um personagem é necessario passar nessa orde:
+# Nome, Raça, Peso, altura e vida
 
+# Exemplo de criação de personagem comum
 personagem1 = Character("Padme", "Humana", 58, 1.65, 40)
-
+# Exemplo de criação de Jedi
 personagem2 = Jedi("Yoda", "yoda", 30, 0.80, 150)
+# Exemplo de criação de Sith
 personagem3 = Sith("Darth Mal", "Sla", 80, 2.0, 250)
 
 
@@ -43,4 +47,9 @@ def combat(Sith: Sith, Jedi: Jedi):
         print(Jedi.speak())
 
 
-combat(personagem3, personagem2)
+# Exemplo de combate
+combat(personagem2, personagem3)
+
+# Após criar um personagem, chame a função de combate com
+# os seus nomes como parametro, !!! IMPORTANTE !!!
+# Sith sempre atacam antes.
